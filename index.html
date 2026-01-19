@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burbuja Chat - Development</title>
+  <!-- <link rel="stylesheet" href="./src/styles.css"> -->
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f3f4f6;
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #1f2937;
+    }
+
+    code {
+      background: #e5e7eb;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+  <!-- import the styles -->
+  <!-- <link rel="stylesheet" href="/dist/burbuja-chat.css"> -->
+  <!-- <link rel="stylesheet" href="./src/styles.css"> -->
+</head>
+
+<body>
+  <h1>🫧 Burbuja Chat</h1>
+  <p>El widget debería aparecer en la esquina inferior derecha.</p>
+  <p>Para compilar: <code>pnpm build</code></p>
+  <p>Los archivos de distribución estarán en <code>dist/</code></p>
+
+  <!-- <script  src="/dist/burbuja-chat.iife.js"></script> -->
+
+  <!-- Widget Burbuja Chat -->
+
+
+  <script>
+    window.BurbujaChatConfig = {
+      tenantId: 'zeroq',
+      organizationId: '2',
+      position: 'bottom-right',
+    };
+  </script>
+
+  <script src="https://qa.zeroq.cl/aiagent/widget-ai-chat/loader.js"
+    data-base-url="https://qa.zeroq.cl/aiagent/widget-ai-chat"></script>
+
+  <!-- 2. Cargar el widget (se auto-inicializa con la configuración anterior) -->
+  <!-- Desarrollo local: -->
+  <!-- <script type="module" src="/src/index.tsx"></script> -->
+
+  <!-- Producción (descomentar una de estas opciones): -->
+
+  <!-- <script src="https://zeroq.cl/aiagent/widget-ai-chat/loader.js"
+          data-base-url="https://zeroq.cl/aiagent/widget-ai-chat"></script> -->
+</body>
+
+</html>
